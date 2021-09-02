@@ -7,7 +7,7 @@ const adminRouter = require('./routes/admin')
 const app = express()
 const path = require('path')
 
-mongoose.connect('mongodb+srv://Vishal2:Vish1234@cluster0.usuzs.mongodb.net/First_Database?retryWrites=true&w=majority',{ useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex : true,})
+mongoose.connect(URL,{ useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex : true,})
 
 const connection = mongoose.connection
 connection.once('open', ()=> {
