@@ -44,7 +44,7 @@ app.get('/',(req, res) =>{
     res.render('articles/home', { articles : articles })
 })
 
-app.listen(5000)
+app.listen(process.env.PORT || 5000)
 
 
 // ---------------------------Middlewares------------------------------------------
