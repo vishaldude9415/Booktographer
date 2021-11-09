@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
+require('dotenv').config()
 const methodOverride = require('method-override')
 const homeRouter = require('./routes/home')
 const articleRouter = require('./routes/articles')
