@@ -8,7 +8,7 @@ const adminRouter = require('./routes/admin')
 const app = express()
 const path = require('path')
 
-mongoose.connect(URL,{ useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex : true,})
+mongoose.connect(process.env.LINK,{ useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex : true,})
 
 const connection = mongoose.connection
 connection.once('open', ()=> {
